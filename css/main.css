@@ -1,104 +1,156 @@
-body {
-	background-color: #ffffff;
-	font-size: small;
-	font-family: Arial, sans-serif;
-}
+/*
+****************************
+* =header
+****************************
+*/
 
 header {
-	position: static;
-	width: 100%;
-	text-align: right;
+	overflow: hidden;
 }
 
 header ul {
-	padding: 23px 30px;
-}
-header li {
-	display: inline;
-	padding-left: 15px;
+	float: right;
+	margin: 5px 20px;
 }
 
-article {
-	width: 100%;
+header li {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 8px;
+}
+
+li img {
+	padding-left: 1px;
+	padding-right: 1px;
+}
+
+header a {
+	color: #404040;
+}
+
+header a:hover {
+	color: #000;
+}
+
+#person {
+	border-radius: 50%;
+}
+
+.share {
+	background: #f4f4f4;
+	line-height: 30px;
+	width: 60px;
 	text-align: center;
 }
 
-article li {
-	display: inline-block;
+.share:hover{
+	background: #e4e4e4;
 }
 
-#googlelogo {
-	padding-top: 130px;
+.share a:hover{
+	text-decoration: none;
 }
 
+.symbol {
+	opacity: 0.6;
+}
+
+/*
+****************************
+* =main
+****************************
+*/
+.main {
+	margin: auto;
+	margin-top: 130px;
+	width: 600px;
+	text-align: center;
+}
+
+.main input[type=text] {
+	width: 550px;
+	height: 27px;
+	background: url(../img/voice.gif) no-repeat;
+	background-position: 99% 50%;
+	background-size: 15px 20px;
+	border: 1px solid #dcdcdc;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin: 17px;
+}
+
+/*
+****************************
+* =footer
+****************************
+*/
 footer {
+	background: #f2f2f2;
+	border-top: 1px solid #e4e4e4;
+	border-bottom: 1px solid #e4e4e4;
+	height: 40px;
+	position: absolute;
+	bottom: 0;
 	width: 100%;
-	position: fixed;
-	bottom: 0px;
-	background-color: #f2f2f2;
-	border-top: 1px solid #e2e2e2;
-}
-
-footer li {
-	display: inline;
-	padding: 15px;
+	overflow: hidden;
 }
 
 footer ul {
+	margin: 12px 17px;
+}
+
+footer li{
 	display: inline;
-	padding: 14px;
+	padding: 13px;
 }
 
-button {
-	padding: 0.5em 0.65em 0.5em 0.65em;
-	color: #444444;
-	background: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
-	font-weight: bold;
-	font-size: 11px;
-	border: 1px solid #dcdcdc;
-	border-radius: 2px;
-}
-
-a {
-	color: #404040;
-	text-decoration: none;
-}
-
-a:hover {
-	color: #000000;
-	text-decoration: underline;
-}
-
-a:visited {
-	text-decoration: none;
-}
-
-#leftfooter {
+footer .leftnav {
 	float: left;
 }
 
-#rightfooter {
+footer .rightnav {
 	float: right;
 }
 
-#searchbar {
-	width: 570px;
-	height: 26px;
-	border: 1px solid #cccccc;
-	padding-left: 8px;
-	margin: 20px;
-	background-image: url(../images/microphone.gif);
-	background-repeat: no-repeat;
-	background-position: 99% 50%;
-	background-size: 15px 19px;
+footer a {
+	color: #666;
 }
 
-#Signin {
-text-decoration: none;
-color: #ffffff;
-font-weight: bold;
-border: 1px solid #4285f4;
-border-radius: 3px;
-background: #4285f4;
-padding: 6px 12px 6px 12px;
+footer a:hover {
+
+}
+
+/*
+****************************
+* =Misc
+****************************
+*/
+
+body {
+	font-family: Arial, sans-serif;
+}
+
+a {
+	text-decoration: none;
+	font-size: 13px;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+button {
+	color: #222;
+	font-size: 11px;
+	font-weight: bold;
+	border: 1px solid #dcdcdc;
+	background: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+	height: 29px;
+	margin: 0 7px;
+}
+
+button:hover {
+	border: 1px solid #ccc;
+	border-bottom: 2px solid #ccc;
+	height: 28px;
 }
